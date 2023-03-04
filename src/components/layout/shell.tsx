@@ -14,7 +14,7 @@ export function ApplicationShell({ children }: PropsWithChildren<unknown>) {
 			<header className="p-6 border-b border-slate-300">
 				<nav className="flex items-center space-x-4">
 					<button
-						aria-label="Toggle sidebar navigation"
+						aria-label="toggle sidebar navigation"
 						onClick={() => setShowingMenu(true)}
 					>
 						<BarsIcon className="w-6 h-6 text-slate-800" />
