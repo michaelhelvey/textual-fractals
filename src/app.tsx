@@ -1,11 +1,15 @@
-function App() {
-	return (
-		<div className="h-full w-full grid place-items-center">
-			<div className="border border-gray-300 rounded shadow p-6">
-				Hello, World!
-			</div>
-		</div>
-	)
-}
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { HomePage } from '@pages/home'
+import ErrorPage from '@pages/error'
 
-export default App
+const router = createBrowserRouter([
+	{
+		path: '/',
+		element: <HomePage />,
+		errorElement: <ErrorPage />,
+	},
+])
+
+export function App() {
+	return <RouterProvider router={router} />
+}
