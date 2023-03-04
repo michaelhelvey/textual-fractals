@@ -15,7 +15,10 @@
 		"isolatedModules": true,
 		"noEmit": true,
 		"types": ["vitest/globals"],
-		"jsx": "react-jsx"
+		"jsx": "react-jsx",
+		"paths": {
+			"@components/*": ["./src/components/*"]
+		}
 	},
 	"include": [
 		"src",

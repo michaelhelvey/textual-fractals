@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
-import App from './app'
+import { Hello } from '@components/hello'
 
 test('it renders using vitests & happy-dom', () => {
-	render(<App />)
+	render(<Hello />)
 	expect(screen.getByText(/hello, world/i)).toBeInTheDocument()
 })
