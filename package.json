@@ -24,9 +24,13 @@
 		"*.{ts,js,json}": "prettier --write"
 	},
 	"dependencies": {
+		"@headlessui/react": "^1.7.13",
+		"@heroicons/react": "^2.0.16",
 		"clsx": "^1.2.1",
+		"framer-motion": "^10.0.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
+		"react-router-dom": "^6.8.2",
 		"tiny-invariant": "^1.3.1"
 	},
 	"devDependencies": {
